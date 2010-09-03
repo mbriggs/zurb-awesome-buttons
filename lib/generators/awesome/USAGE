@@ -1,0 +1,9 @@
+Description:
+    Generator to install view files for zurb awesome buttons
+
+Example:
+    rails generate awesome:install
+
+    This will create:
+        public/images/awesome-overlay.png
+        public/stylesheets/sass/awesome.sass
