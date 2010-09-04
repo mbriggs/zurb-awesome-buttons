@@ -9,7 +9,7 @@ module Awesome
     def install
       copy_file 'awesome-overlay.png', 'public/images/awesome.png' 
       if options.css?
-        copy_file 'awesome.css', 'public/stylesheets/sass/awesome.css' 
+        copy_file 'awesome.css', 'public/stylesheets/awesome.css' 
       else
         copy_file 'awesome.sass', 'public/stylesheets/sass/awesome.sass' 
       end
