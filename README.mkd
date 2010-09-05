@@ -1,3 +1,15 @@
 packaging for styles from http://www.zurb.com/article/266/super-awesome-buttons-with-css3-and-rgba, with some helpers
 
+to use, add the following to your Gemfile and run `bundle install`
+
+    gem "zurb-awesome-buttons", :require => "awesome_buttons"
+
+to install static content, run
+
+    rake awesome:install
+
+by default, that will install awesome.sass into your stylesheets/sass directory. if you want awesome.css instead, just pass `--css`
+
+    rake awesome:install --css
+
 note that this is in no way official, these styles are property of zurb, I am not an employee of zurb, and this is subject to whatever license they happen to choose (currently there is a blog comment saying feel free to use these in your projects)
