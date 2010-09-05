@@ -8,20 +8,28 @@ Gem::Specification.new do |s|
   s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.date = %q{2010-09-02}
+  s.date = %q{2010-09-04}
+  s.extra_rdoc_files = [
+    "README.mkd"
+  ]
   s.files = [
-    "lib/generators/awesome_buttons/USAGE",
-     "lib/generators/awesome_buttons/awesome_buttons_generator.rb",
-     "lib/generators/awesome_buttons/awsome_generator.rb",
-     "lib/generators/awesome_buttons/templates/awesome-overlay.png",
-     "lib/generators/awesome_buttons/templates/awesome.css",
-     "lib/generators/awesome_buttons/templates/awesome.sass",
-     "lib/zurb-awesome-buttons.rb"
+    "lib/app_helper.rb",
+     "lib/awesome_buttons.rb",
+     "lib/engine.rb",
+     "lib/generators/awesome/USAGE",
+     "lib/generators/awesome/install_generator.rb",
+     "lib/generators/awesome/templates/awesome-overlay.png",
+     "lib/generators/awesome/templates/awesome.css",
+     "lib/generators/awesome/templates/awesome.sass"
   ]
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{packaging for styles from http://www.zurb.com/article/266/super-awesome-buttons-with-css3-and-rgba, with some helpers}
+  s.test_files = [
+    "spec/application_helper_spec.rb",
+     "spec/spec_helper.rb"
+  ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
